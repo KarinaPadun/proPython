@@ -58,6 +58,12 @@ def string(string_1, string_2):
 
 
 def final_string(string_1, string_2):
+    """
+
+    :param string_1:
+    :param string_2:
+    :return: concatenated string
+    """
     result = ''.join([string_1, string_2])
     return result
 
