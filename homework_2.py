@@ -20,10 +20,29 @@ def length_string(string):
 
 
 def length(string):
+    """
+    Функція перебирає елементи строки. З кожним елементом
+    додається +1 до рахунку. Рахунок дорівнює довжині строки
+
+
+    :param string:
+    :return: length string
+    """
     counter = 0
     for _ in string:
         counter += 1
     return counter
+
+
+# 1.4 a
+
+def length_map(string_1):
+    """
+
+    :param string_1:
+    :return:
+    """
+    return sum(map(lambda x: 1, string_1))
 
 
 # 2 Числа (Int/float):
