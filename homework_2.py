@@ -163,5 +163,24 @@ def average_value(list_1):
     """
     return sum(list_1) / len(list_1)
 
+# 3.2 a
+import statistics
 
-# b Реалізуйте функцію, яка приймає два списки і повертає список, який містить спільні елементи обох списків
+
+def average_val(list_2):
+    """
+    Приймає список чисел. Повертає середне значення списку за допомогою методу statistics.mean
+
+    :param list_2:
+    :return: середне значення списку
+    """
+    return statistics.mean(list_2)
+
+
+# 3.1 b Реалізуйте функцію, яка приймає два списки і повертає список, який містить спільні елементи обох списків
+
+def unique_symbols(list1, list2):
+    list3 = [i for i in list1 if i in list2]
+    return list3
+
+
