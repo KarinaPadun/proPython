@@ -58,16 +58,14 @@ def string(string_1, string_2):
 
 
 def final_string(string_1, string_2):
-    res = ''.join([string_1], [string_2])
-    return res
-
-
-string_1 = 'aa'
-string_2 = '443'
-print(string_2 +string_1)
+    result = ''.join([string_1, string_2])
+    return result
 
 
 # 1.3 b
+def final_str_f(str1, str2):
+    fin_str = f"{str1}{str2}"
+    return fin_str
 
 
 
