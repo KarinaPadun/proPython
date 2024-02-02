@@ -59,6 +59,7 @@ def string(string_1, string_2):
 
 def final_string(string_1, string_2):
     """
+    Повертає об'єднанну строку
 
     :param string_1:
     :param string_2:
