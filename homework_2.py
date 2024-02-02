@@ -16,7 +16,14 @@ def length_string(string):
     """
     return len(string)
 
+# 1.3 a
 
+
+def length(string):
+    counter = 0
+    for _ in string:
+        counter += 1
+    return counter
 
 
 # 2 Числа (Int/float):
