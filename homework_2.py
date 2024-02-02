@@ -150,3 +150,18 @@ def division(number_1, number_2):
     """
     return number_1 // number_2, number_1 % number_2
 
+# 3.1 Списки (Lists):
+# a Напишіть функцію для обчислення середнього значення списку чисел.
+
+
+def average_value(list_1):
+    """
+    Повертає середнє значення списку, ділячи сумму чисел на їх кількість
+
+    :param list_1:
+    :return: average value list, float
+    """
+    return sum(list_1) / len(list_1)
+
+
+# b Реалізуйте функцію, яка приймає два списки і повертає список, який містить спільні елементи обох списків
