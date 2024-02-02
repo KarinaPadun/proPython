@@ -81,14 +81,38 @@ def final_str_f(str1, str2):
 # 2.1 a
 
 def square_num(num):
+    """
+        Function return square number
+        :param num:
+        :return: square number
+        """
     return num**2
 
 
 # 2.2 a
-def square_num(num):
+def square(num):
+    """
+    Функція повертає квадрат числа
+    :param num:
+    :return: квадрат числа
+    """
     return num*num
 
 # 2.3 a
+
+from math import pow
+
+
+def sqr_number(number):
+    """
+    Функція приймає число. Метод pow приймає число та зводить його у вказану степінь.
+    :param number:
+    :return: квадрат числа
+    """
+    return pow(number, 2)
+
+
+
 # 2.4 a
 
 
