@@ -112,5 +112,30 @@ def sqr_number(number):
     return pow(number, 2)
 
 
-# b Створіть функцію, яка приймає два числа і повертає їхню суму.
-# c Створіть функцію яка приймає 2 числа типу int, виконує операцію ділення та повертає чілу частину і залишок.
+# 2.1 b Створіть функцію, яка приймає два числа і повертає їхню суму.
+
+def sum_numbers(number_1, number_2):
+    """
+    Return sum numbers
+
+    :param number_1: int, float
+    :param number_2: int, float
+    :return: sum , float
+    """
+    return sum([number_1, number_2])
+
+# 2.2 b
+
+
+def summ(num_1, num_2):
+    """
+    Return sum numbers
+
+    :param num_1:
+    :param num_2:
+    :return: sum
+    """
+    return num_1 + num_2
+
+
+# 2.1 c Створіть функцію яка приймає 2 числа типу int, виконує операцію ділення та повертає чілу частину і залишок.
