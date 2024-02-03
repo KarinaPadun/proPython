@@ -242,6 +242,30 @@ def pair_number(num):
     else:
         return 'Непарне'
 
+# 6.2 a
+
+
+def pair_num(number):
+    """
+    Функція, яка визначає, чи є число парним чи непарним
+
+    :param number:
+    :return:  "Парне" або "Непарне"
+    """
+    return 'Парне' if not number % 2 else 'Непарне'
+
+# 6.3 a
+
+
+def pair_numb(number):
+    """
+    Функція, яка визначає, чи є число парним чи непарним
+
+    :param number:
+    :return:  "Парне" або "Непарне"
+    """
+    answer = ['Непарне', 'Парне']
+    return answer[int(number % 2 == 0)]
 
 
 
