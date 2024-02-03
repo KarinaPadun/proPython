@@ -211,7 +211,7 @@ def common_element(list1, list2):
     Функція приймає два списки та повертає ліст спільних унікальних елементів списків
     :param list1:
     :param list2:
-    :return: list  common elements
+    :return: list common elements
     """
     return list(set.intersection(set(list1), set(list2)))
 
