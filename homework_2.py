@@ -393,12 +393,3 @@ def pair_numbers_list(list_2):
 
 
 
-
-list_1 = [1,2,3,4,5,6]
-
-new_list = []
-
-for i in list_1:
-    if i % 2 == 0:
-        new_list.append(i)
-print(new_list)
