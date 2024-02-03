@@ -1,21 +1,35 @@
+# черновой вариант
 import random
+
+
 
 class Car:
     def __init__(self, model, color):
+        """
+        Функція є конструктором класу.Призначена для ініціалізації об'єкта класу з заданими параметрами.
+        :param model:
+        :param color:
+        """
         self.fuel = random.randrange(0, 9)  # Initialize fuel with random value
         self.trip_distance = 0
         self.model = model
         self.color = color
 
     def move(self, distance):
+        """
+        Функція призначена для моделювання переміщення автомобіля на визначену відстань
+        :param distance:
+        :return: Повертає True, щоб показати успішну подорож,Повертає False, щоб показати,
+        що подорож не відбулася через нестачу пального.
+        """
         if self.fuel >= distance:
             self.trip_distance += distance
             self.fuel -= distance
-            print(f"{self.model} ({self.color}) traveled {distance} units.")
+            print(f"{self.model} ({self.color}) проїхала {distance} км.")
         else:
-            print(f"{self.model} ({self.color}) ran out of fuel!")
+            print(f"{self.model} ({self.color}) не має палива!")
 
-desired_dist = 50  # Set the desired race distance
+desired_dist = 10
 
 # Create 3 car instances
 car1 = Car("Ferrari", "red")
@@ -38,4 +52,4 @@ while race_dist < desired_dist:
 
 # Print final results for each car
 for car in [car1, car2, car3]:
-    print(f"\n{car.model} ({car.color}) traveled {car.trip_distance} units and has {car.fuel} units of fuel remaining.")
+    print(f"\n{car.model} ({car.color}) проїхала {car.trip_distance} км та має {car.fuel} одиниць палива.")

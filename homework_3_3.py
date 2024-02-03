@@ -3,12 +3,23 @@ import random
 
 class Car:
     def __init__(self, model, color):
+        """
+        Функція є конструктором класу.Призначена для ініціалізації об'єкта класу з заданими параметрами.
+        :param model:
+        :param color:
+        """
         self.fuel = random.randrange(0, 9)
         self.trip_distance = 0
         self.model = model
         self.color = color
 
     def move(self, distance):
+        """
+        Функція призначена для моделювання переміщення автомобіля на визначену відстань
+        :param distance:
+        :return: Повертає True, щоб показати успішну подорож,Повертає False, щоб показати,
+        що подорож не відбулася через нестачу пального.
+        """
         if self.fuel >= distance:
             self.fuel -= distance
             self.trip_distance += distance
