@@ -308,8 +308,19 @@ def union_sets(set1, set2):
     return set1
 
 
-
 # 5.1 b Створіть функцію, яка перевіряє, чи є одна множина підмножиною іншої.
+??????????????
+def set_in_set(set1, set2):
+    if set1 in set2:
+        return True
+    else:
+        return False
+
+
+A = {1, 2, 3, 4}
+B = {1, 2}
+
+print(A <= B)
 
 
 # 6.1 Умовні вирази та цикли:
