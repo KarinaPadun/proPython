@@ -316,3 +316,17 @@ def pair_numb(number):
     return answer[int(number % 2 == 0)]
 
 # 6.1 b Створіть функцію, яка приймає список чисел і повертає новий список, що містить тільки парні числа.
+
+
+def pair_number_list(list_1):
+    """
+    Function return pair numbers list
+    :param list_1:
+    :return: pair_number_list
+    """
+    new_list = []
+    for i in list_1:
+        if i % 2 == 0:
+            new_list.append(i)
+    return new_list
+
