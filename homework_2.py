@@ -282,12 +282,26 @@ def union_set(set_1, set_2):
     """
     return set_1.union(set_2)
 
+# 5.2 а
+
+
+def union_of_sets(set1, set2):
+    """
+    Функція об'єднання двох множин
+    :param set1:
+    :param set2:
+    :return: Об'єднання множин
+    """
+    return set1 | set2
+
+
+# 5.3 а
 
 # 5.1 b Створіть функцію, яка перевіряє, чи є одна множина підмножиною іншої.
 
 A = {1, 2}
 B = {4, 5}
-print(A.union(B))
+print(A | B)
 
 
 # 6.1 Умовні вирази та цикли:
