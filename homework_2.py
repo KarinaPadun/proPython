@@ -380,6 +380,15 @@ def pair_number_list(list_1):
 
 # 6.2 b
 
+
+def pair_numbers_list(list_2):
+    """
+    Function return pair numbers list
+    :param list_2:
+    :return: pair_number_list
+    """
+
+
 # 6.3 b
 
 
