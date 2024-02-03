@@ -309,7 +309,7 @@ def union_sets(set1, set2):
 
 
 # 5.1 b Створіть функцію, яка перевіряє, чи є одна множина підмножиною іншої.
-??????????????
+#??????????????
 def set_in_set(set1, set2):
     if set1 in set2:
         return True
@@ -387,9 +387,10 @@ def pair_numbers_list(list_2):
     :param list_2:
     :return: pair_number_list
     """
-
-
-# 6.3 b
-
+    list_3 = []
+    for i in list_2:
+        if i % 2 == 0 or i % 10 in {0, 2, 4, 6, 8}:
+            list_3.append(i)
+    return list_3
 
 
