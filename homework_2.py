@@ -240,9 +240,34 @@ def keys_dictionary(dict_2):
     return list(key for key in dict_2)
 
 
-
-
 # 4.1 b Реалізуйте функцію, яка приймає два словники і повертає новий словник, який є об'єднанням обох словників.
+
+
+def new_dict(dict1, dict2):
+    """
+    Функція приймає два словника. Створюємо копію словника 1 ,щоб поверталось значення замість None.
+    Додаємо елементи другого словника до першого
+
+    :param dict1:
+    :param dict2:
+    :return: об'єднанний словник
+    """
+    dict_3 = dict1.copy()
+    dict_3.update(dict2)
+    return dict_3
+
+
+# 4.2 b
+def new_dict_1(dict1, dict2):
+    """
+    Функція приймає два словника та повертає новий об'єднанний словник
+
+    :param dict1:
+    :param dict2:
+    :return: новий об'єднанний словник
+    """
+    return new_dict(dict1, dict2)
+
 
 
 # 5.1 Множини (Sets):
