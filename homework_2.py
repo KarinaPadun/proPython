@@ -309,18 +309,31 @@ def union_sets(set1, set2):
 
 
 # 5.1 b Створіть функцію, яка перевіряє, чи є одна множина підмножиною іншої.
-#??????????????
-def set_in_set(set1, set2):
-    if set1 in set2:
-        return True
+
+def is_subset(set1, set2):
+    """
+    Функція перевіряє, чи є одна множина підмножиною іншої
+    :param set1:
+    :param set2:
+    :return:
+    """
+    result = set1.issubset(set2)
+    if result:
+        return "set_a є підмножиною set_b"
     else:
-        return False
+        return "set_a не є підмножиною set_b"
 
 
-A = {1, 2, 3, 4}
-B = {1, 2}
+# 5.2 b
+def is_subset_set(set1, set2):
+    """
+    Функція повертає True, якщо сет1 є підмножиною сету2, в іншому випадку повертає False
 
-print(A <= B)
+    :param set1:
+    :param set2:
+    :return:
+    """
+    return all(element in set2 for element in set1)
 
 
 # 6.1 Умовні вирази та цикли:
