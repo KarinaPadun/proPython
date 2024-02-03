@@ -179,7 +179,7 @@ def average_val(list_2):
 
 # 3.1 b Реалізуйте функцію, яка приймає два списки і повертає список, який містить спільні елементи обох списків
 
-def unique_symbols(list1, list2):
+def common_elements(list1, list2):
     """
     Функція приймає два списка та перевіряє входження кожного елементу.
     Якщо елемент є в обох списках, то він додається в список спільних елементів
@@ -190,5 +190,29 @@ def unique_symbols(list1, list2):
     """
     list3 = [i for i in list1 if i in list2]
     return list3
+
+# 3.2 b
+
+
+def new_list(list1, list2):
+    """
+       Функція приймає два списка та повертає список спільних елементів
+
+       :param list1:
+       :param list2:
+       :return: список спільних елементів списків
+       """
+    return list(set(list1) & set(list2))
+
+
+# 3.3 b
+def common_element(list1, list2):
+    """
+    Функція приймає два списки та повертає ліст спільних унікальних елементів списків
+    :param list1:
+    :param list2:
+    :return: list  common elements
+    """
+    return list(set.intersection(set(list1), set(list2)))
 
 
