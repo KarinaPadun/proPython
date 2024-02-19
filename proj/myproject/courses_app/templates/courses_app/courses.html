@@ -2,10 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Страница курсов</title>
+    <title>This is the Courses page</title>
 </head>
 <body>
-    <h1>Страница курсов</h1>
-    {# Дополнительный контент страницы курсов #}
+    {% if user.is_authenticated %}
+        <h1>This is the Courses page</h1>
+        {# Дополнительный контент страницы курсов #}
+    {% else %}
+        <h1>You have no permissions to view this page</h1>
+    {% endif %}
 </body>
 </html>
