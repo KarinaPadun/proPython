@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ввод данных</title>
+</head>
+<body>
+    <h1>Введите свои данные</h1>
+    <form action="{% url 'members_app:output' %}" method="post">
+        {% csrf_token %}
+        <label for="name">Имя:</label>
+        <input type="text" name="name" id="name">
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email">
+        <br>
+        <input type="submit" value="Сохранить">
+    </form>
+</body>
+</html>
