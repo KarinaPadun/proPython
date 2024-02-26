@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>{{ course.title }}</h1>
+  <p>Enrollments:</p>
+  <ul>
+    {% for enrollment in course.enrollments.all %}
+      <li>{{ enrollment.user.username }} - {{ enrollment.enrollment_date }}</li>
+    {% endfor %}
+  </ul>
+{% endblock %}
