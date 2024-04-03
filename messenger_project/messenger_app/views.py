@@ -1,6 +1,9 @@
 from .models import Chat, Message
 from .serializers import ChatSerializer, MessageSerializer, MessageDetailSerializer, MessageCreateSerializer
 from rest_framework import viewsets
+from django.test import TestCase
+from .views import ChatViewSet, MessageViewSet, MessageDetailViewSet, MessageCreateViewSet
+
 
 class ChatViewSet(viewsets.ModelViewSet):
     queryset = Chat.objects.filter(user=self.request.user)
@@ -32,3 +35,4 @@ class MessageCreateViewSet(viewsets.ModelViewSet):
 
     def perform_create(self, serializer):
         serializer.save(sender=self.request.user)
+
